@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: chess-game
+    env: node
+    buildCommand: npm install
+    startCommand: node app.js
+    envVars:
+      - key: PORT
+        value: 10000
